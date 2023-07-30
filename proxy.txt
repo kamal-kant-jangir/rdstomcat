@@ -1,0 +1,12 @@
+ProxyPass "/student" "http://localhost:8080/student"
+ProxyPassReverse "/student"  "http://localhost:8080/student"
+#
+#
+
+ProxyPass "/student" "http://10.0.2.30:8080/student"
+ProxyPassReverse "/student"  "http://10.0.2.30:8080/student"
+#
+#
+
+
+/etc/httpd/conf.d/
