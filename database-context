@@ -4,6 +4,12 @@
                username="USERNAME" password="PASSWORD" driverClassName="com.mysql.jdbc.Driver"
                url="jdbc:mysql://DB-ENDPOINT:3306/DATABASE"/>
 
+
+yum provides mysql
+yum install mariadb -y
+
+mysql -h [host endpoint from aws] -u [username] -p  
+
 use studentapp;
 CREATE TABLE if not exists students(student_id INT NOT NULL AUTO_INCREMENT,
 	student_name VARCHAR(100) NOT NULL,
