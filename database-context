@@ -10,7 +10,12 @@ yum install mariadb -y
 
 mysql -h [host endpoint from aws] -u [username] -p  
 
-use studentapp;
+create database [database-name];
+show databases;
+
+use [database-name];
+show tables;
+
 CREATE TABLE if not exists students(student_id INT NOT NULL AUTO_INCREMENT,
 	student_name VARCHAR(100) NOT NULL,
     student_addr VARCHAR(100) NOT NULL,
@@ -20,3 +25,6 @@ CREATE TABLE if not exists students(student_id INT NOT NULL AUTO_INCREMENT,
 	student_year_passed VARCHAR(10) NOT NULL,
 	PRIMARY KEY (student_id)
 );
+
+show tables;
+select * from [table-name];
